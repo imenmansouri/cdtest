@@ -1,0 +1,9 @@
+- name: Pushing
+  docker_image:
+   name: test
+   repository: imenmansouri/livraison-continue
+   source: build
+   build:         
+     path: /var/lib/jenkins/workspace/cdtest
+   tag: latest
+   push: yes
